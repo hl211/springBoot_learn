@@ -1,5 +1,7 @@
 package com.hl.controller;
 
+import com.hl.common.MyException;
+import com.hl.common.ResultCode;
 import com.hl.pojo.User;
 import com.hl.service.UserService;
 import io.swagger.annotations.ApiImplicitParam;
@@ -30,6 +32,11 @@ public class UserController {
     @RequestMapping(value = "user",method = RequestMethod.POST)
     String inde() {
         return "Hello Spring Boot";
+    }
+
+    @RequestMapping(value="exce")
+    String exce() throws Exception{
+        throw new MyException(ResultCode.WEAK_NET_WORK);
     }
 
 }
