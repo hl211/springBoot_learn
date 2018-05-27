@@ -62,17 +62,17 @@
 
     <!-- Mixed sync/async -->
     <Loggers>
-        <!--<Root level="debug" includeLocation="true">-->
-            <!--<AppenderRef ref="console"/>-->
-            <!--<AppenderRef ref="infoFile"/>-->
-            <!--<AppenderRef ref="errorFile"/>-->
-        <!--</Root>-->
-
-        <AsyncRoot level="debug" includeLocation="true">
+        <Root level="Info" includeLocation="true">
             <AppenderRef ref="console"/>
             <AppenderRef ref="infoFile"/>
             <AppenderRef ref="errorFile"/>
-        </AsyncRoot>
+        </Root>
+
+        <!--<AsyncRoot level="debug" includeLocation="true">-->
+            <!--<AppenderRef ref="console"/>-->
+            <!--<AppenderRef ref="infoFile"/>-->
+            <!--<AppenderRef ref="errorFile"/>-->
+        <!--</AsyncRoot>-->
     </Loggers>
 
 </configuration>

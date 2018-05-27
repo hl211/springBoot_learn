@@ -28,11 +28,14 @@
 - 访问的url：http://localhost:8080/druid/
 
 ##6、使用AOP统一处理Web请求日志
+- 添加aop依赖包
+- 添加一个切面类
 
 ##7、集成mybatis-plus
 
 ##8、集成异常处理
 - 使用@ControllerAdvice 拦截异常并统一处理
+- 添加一个异常拦截类，采用上面注解
 
 ##9、集成shiro
 
