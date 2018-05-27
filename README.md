@@ -15,8 +15,9 @@
 - 如果mapper与mapper.xml(放在resources)不在同一个文件时，需要配置.xml的路径(application.yml)
 - 如果他们在同一个文件，需要pom.xml打包配置resources，包含资源文件.
 
-##4、使用log4j记录日志
-
+##4、使用log4j2记录日志
+- 高版本的springboot不在支持log4j的框架，改支持log4j2
+- 新的log4j2配置
 ##5、整合druid
 - 添加Druid库
 - 加DruidConfigure和application.yml中
@@ -24,5 +25,7 @@
 
 ##6、使用AOP统一处理Web请求日志
 
+##7、集成mybatis-plus
 ##参考
-- http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/
+- all: http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/
+- druid: https://segmentfault.com/a/1190000009132815
