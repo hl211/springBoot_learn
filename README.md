@@ -38,7 +38,15 @@
 - 添加一个异常拦截类，采用上面注解
 
 ##9、集成shiro
+- 添加包依赖
+- 配置ShiroConfig
+- https://blog.csdn.net/ityouknow/article/details/73836159
 
+##10、集成spting-data-jpa
+- 添加包依赖
+- 在application.yml 里配置
+- 整合文档  https://blog.csdn./hkhhkb/article/details/79789869
+- 多条件查询 https://www.cnblogs.com/arrrrrya/p/7865090.html
 ##参考
 - all: http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/
 - druid: https://segmentfault.com/a/1190000009132815
