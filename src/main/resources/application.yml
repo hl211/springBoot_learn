@@ -15,7 +15,7 @@ swagger2.package: com.hl.controller
 #databse link
 spring:
   datasource:
-      url: jdbc:mysql://localhost:3306/hl?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      url: jdbc:mysql://localhost:3306/spring_boot_learn?useUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
       password: root
       driver-class-name: com.mysql.jdbc.Driver
@@ -60,3 +60,9 @@ spring:
       charset: UTF-8
       enabled: true
       force: true
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+
+
+# 注入自定义的realm

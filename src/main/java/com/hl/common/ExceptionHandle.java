@@ -1,5 +1,6 @@
 package com.hl.common;
 
+import org.apache.shiro.authz.UnauthorizedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -16,6 +17,10 @@ public class ExceptionHandle {
 
     private final static Logger logger = LoggerFactory.getLogger(ExceptionHandle.class);
 
+    @ExceptionHandler(value = UnauthorizedException.class)//处理访问方法时权限不足问题
+    public String defaultErrorHandler(HttpServletRequest req, Exception e)  {
+        return "403";
+    }
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public Result handle(Exception e) {
