@@ -42,7 +42,7 @@
 - 配置ShiroConfig
 - https://blog.csdn.net/ityouknow/article/details/73836159
 
-## 10、集成spting-data-jpa
+## 10、集成spring-data-jpa
 - 添加包依赖
 - 在application.yml 里配置
 - 整合文档  https://blog.csdn./hkhhkb/article/details/79789869
