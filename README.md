@@ -18,7 +18,7 @@
 - 如果mapper与mapper.xml(放在resources)不在同一个文件时，需要配置.xml的路径(application.yml)
 - 如果他们在同一个文件，需要pom.xml打包配置resources，包含资源文件.
 
-##4、使用log4j2记录日志
+## 4、使用log4j2记录日志
 - 高版本的springboot不在支持log4j的框架，改支持log4j2
 - 新的log4j2配置
 
@@ -50,6 +50,7 @@
 ## 10.1 问题
 - 多对一等关系时，fastjson序列化会产生死循环(@JsonIdentityInfo 解决)
 
+## 11. 集成jwt认证
 ## 参考
 - all: http://blog.didispace.com/Spring-Boot%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B/
 - druid: https://segmentfault.com/a/1190000009132815
